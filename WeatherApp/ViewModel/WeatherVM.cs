@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using WeatherApp.Model;
 
 namespace WeatherApp.ViewModel
 {
@@ -17,9 +18,22 @@ namespace WeatherApp.ViewModel
             set
             {
                 _query = value;
-                OnPropertyChanged("Query");
+                OnPropertyChanged(nameof(Query));
             }
         }
+
+        private CurrentConditions _currentConditions;
+
+        public CurrentConditions CurrentConditions
+        {
+            get { return _currentConditions; }
+            set
+            {
+                _currentConditions = value;
+                OnPropertyChanged(nameof(CurrentConditions));
+            }
+        }
+
 
 
         public event PropertyChangedEventHandler? PropertyChanged;
