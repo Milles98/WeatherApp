@@ -21,7 +21,7 @@
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <Grid>
-                            <TextBlock Text="{Binding Query, UpdateSourceTrigger=PropertyChanged}"/>
+                            <TextBlock/>
                         </Grid>
                     </DataTemplate>
                 </ListView.ItemTemplate>
