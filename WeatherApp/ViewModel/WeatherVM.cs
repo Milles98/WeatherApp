@@ -46,7 +46,27 @@ namespace WeatherApp.ViewModel
             }
         }
 
-
+        public WeatherVM()
+        {
+            if (DesignerProperties.GetIsInDesignMode(new System.Windows.DependencyObject()))
+            {
+                SelectedCity = new City
+                {
+                    LocalizedName = "San Francisco"
+                };
+                CurrentConditions = new CurrentConditions
+                {
+                    WeatherText = "Partly Cloudy",
+                    Temperature = new Temperature
+                    {
+                        Metric = new Units
+                        {
+                            Value = 21
+                        }
+                    }
+                };
+            }
+        }
 
 
         public event PropertyChangedEventHandler? PropertyChanged;
