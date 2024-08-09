@@ -34,6 +34,19 @@ namespace WeatherApp.ViewModel
             }
         }
 
+        private City _selectedCity;
+
+        public City SelectedCity
+        {
+            get { return _selectedCity; }
+            set
+            {
+                _selectedCity = value;
+                OnPropertyChanged(nameof(SelectedCity));
+            }
+        }
+
+
 
 
         public event PropertyChangedEventHandler? PropertyChanged;
