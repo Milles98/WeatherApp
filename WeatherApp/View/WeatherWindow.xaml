@@ -28,8 +28,7 @@
             </ListView>
         </StackPanel>
         <Grid Grid.Row="1"
-              Background="#4392f1"
-              >
+              Background="#4392f1">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*"/>
                 <ColumnDefinition Width="Auto"/>
