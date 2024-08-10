@@ -19,7 +19,8 @@
                     Command="{Binding SearchCommand}"
                     CommandParameter="{Binding Query}"
                     Content="Search"/>
-            <ListView ItemsSource="{Binding Cities}">
+            <ListView ItemsSource="{Binding Cities}"
+                      SelectedValue="{Binding SelectedCity}">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <Grid>
